@@ -1,0 +1,284 @@
+/* Owl Carousel: https://github.com/OwlCarousel2/OwlCarousel2 */
+
+
+/* fonts */
+@font-face {
+    font-family: lexendMega;
+    src: url(../../Fonts/LexendMega-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: robotoCondensed;
+    src: url(../../Fonts/RobotoCondensed-Regular.ttf);
+    font-weight: regular;
+}
+@font-face {
+    font-family: robotoLight;
+    src: url(../../Fonts/Roboto-Light.ttf);
+    font-weight: regular;
+}
+@font-face {
+    font-family: robotoThin;
+    src: url(../../Fonts/Roboto-Thin.ttf);
+    font-weight: regular;
+}
+@font-face {
+    font-family: notoSans;
+    src: url(../../Fonts/NotoSans-Regular.ttf);
+    font-weight: regular;
+}
+
+/* background and body formatting */
+body {
+    background-image: linear-gradient(to top, rgb(212, 212, 212), black);
+}
+
+/* navbar stuff */
+.container-fluid {
+    background-color: black !important;
+}
+.dropdown-menu {
+    background-color: black;
+    z-index: 2;
+}
+.dropdown-item {
+    background-color: black;
+    z-index: 10;
+}
+.nav-item:hover {
+    background-color: rgb(83, 83, 83);
+}
+.dropdown-item:hover {
+    background-color: rgb(83, 83, 83);
+}
+.navbar-brand:hover {
+    background-color: rgb(83, 83, 83);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    padding: 0;
+    height: 60px;
+    background-color: black !important;
+    border-bottom: 8px solid;
+    border-image-source: linear-gradient(180deg, black,white);
+    border-image-slice: 50;
+}
+.has-text {
+    color: white !important;
+    font-family: lexendMega !important;
+}
+.socials-div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 8;
+    background-color:rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+    margin: 10px;
+}
+.socials-logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+/* video stuff */
+.video-main-div {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+}
+.top-video {
+    max-height: 700px;
+    margin-top: 75px;
+    margin-bottom: 2%;
+    height: auto;
+    width: auto;
+    z-index: 0;
+}
+.logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70%;
+    left: 40%;
+    z-index: 2;
+    max-height: 20%;
+    height: auto;
+    max-width: 100%;
+    opacity: .7;
+}
+
+/* carousel stuff */
+.carousel-inner .carousel-item {
+    width: 100%;
+    position: relative;
+}
+.carousel  {
+    margin: 4%;
+    max-height: 400px;
+    max-width: 700px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-img {
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    /* border-style: solid;
+    border-width: 5px;
+    border-image:
+      linear-gradient(
+        to bottom, 
+        black, 
+        white
+      ) 1 100%;
+    border-top: 0;
+    border-bottom: 0; */
+}
+.carousel-stats-div {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.stats-div {
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.statistic {
+    padding: 10px;
+    margin: 4%;
+}
+.stat-num {
+    font-size: 85px;
+    font-family: notoSans;
+    text-align: center;
+    color: white;
+}
+.stat-text {
+    font-size: 22px;
+    font-family: notoSans;
+    text-align: center;
+    color: white;
+}
+
+/* card stuff */
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.171);
+}
+.card-img {
+    border-radius: 15px;
+    padding: 5px;
+}
+.card-title {
+    font-family: robotoLight !important;
+    font-size: 30px;
+    text-align: center;
+}
+.cards-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* Sitemap */
+.sitemap {
+    width: 100%;
+    background-color:rgb(36, 36, 36);
+    position: relative;
+    bottom: 0;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+.sitemap-main-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.sitemap-div {
+    margin-right: 2%;
+    margin-left: 2%; /* maybe take this one out? */
+}
+.sitemap-text-link {
+    font-family: robotoThin;
+    color: white;
+    text-decoration: none !important;
+}
+.sitemap-text-link:hover {
+    background-color:rgba(156, 156, 156, 0.171);
+    text-decoration: none !important;
+}
+.sitemap-text-underlined {
+    font-family: robotoThin;
+    color: white;
+    text-decoration: underline;
+}
+
+/* applied to all links */
+a {
+    text-decoration: none;
+}
+
+/* accordion */
+.accordion-title {
+    font-family: robotoCondensed;
+    font-size: 40px;
+    text-decoration: underline;
+    color:rgb(53, 53, 53);
+    padding-left: 4%;
+}
+.accordion-title-top {
+    padding-top: 4%;
+}
+.accordion {
+    background-color:rgb(146, 146, 146, 0) !important;
+    margin: 4%;
+}
+.accordion-body {
+    color:rgb(53, 53, 53);
+    font-family: notoSans;
+}
+.accordion-item {
+    color:rgb(53, 53, 53);
+    font-family: notoSans;
+}
+.accordion-button-text {
+    color:rgb(53, 53, 53);
+    font-family: notoSans;
+    font-size: 25px;
+}
+.accordion-header:hover {
+    background-color:rgba(0, 0, 0, 0.171) !important;
+}
+.accordion-button {
+    background-color:rgb(80, 80, 80, 0) !important;
+}

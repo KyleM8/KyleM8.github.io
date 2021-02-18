@@ -1,0 +1,5 @@
+Image must be taller than 400px for carousels underneath the main video.
+
+Image does not have to be 16:9, but should be close.
+
+Images for cards should be similar size, and no portrait images on cards.
