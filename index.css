@@ -31,12 +31,10 @@
 /* background and body formatting */
 body {
     background-image: linear-gradient(to top, rgb(212, 212, 212), black);
+    overflow-x: hidden;
 }
 
 /* navbar stuff */
-.container-fluid {
-    background-color: black !important;
-}
 .dropdown-menu {
     background-color: black;
     z-index: 2;
@@ -107,7 +105,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     top: 70%;
-    left: 40%;
+    left: 38%;
     z-index: 2;
     max-height: 20%;
     height: auto;
@@ -121,16 +119,14 @@ body {
     position: relative;
 }
 .carousel  {
-    margin: 4%;
+    margin: 2%;
     max-height: 400px;
     max-width: 700px;
     height: auto;
     width: auto;
-    z-index: 1;
-    padding-left: 4%;
-    padding-right: 4%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 }
 .carousel-img {
     max-height: 400px;
@@ -138,6 +134,7 @@ body {
     width: auto;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
     /* border-style: solid;
     border-width: 5px;
     border-image:
@@ -150,34 +147,27 @@ body {
     border-bottom: 0; */
 }
 .carousel-stats-div {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    width: 100%;
 }
 .stats-div {
-    padding-left: 4%;
-    padding-right: 4%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    margin: 0;
 }
 .statistic {
-    padding: 10px;
-    margin: 4%;
+    padding: 2%;
 }
 .stat-num {
-    font-size: 85px;
+    font-size: 75px;
     font-family: notoSans;
     text-align: center;
     color: white;
 }
 .stat-text {
-    font-size: 22px;
+    font-size: 20px;
     font-family: notoSans;
     text-align: center;
     color: white;
