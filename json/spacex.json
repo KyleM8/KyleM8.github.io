@@ -1,0 +1,49 @@
+{
+    "launchVehicles": [
+        {
+            "name": "Falcon 9",
+            "description": "Falcon 9 is SpaceX's most-used launch vehicle. Powered by nine Merlin 1D engines that provide a takeoff thrust of over 7500 kilonewtons, Falcon 9's first-stage booster is 100% reusable, and can claim to be the most reused orbital-class rocket in the world.",
+            "images": [""],
+            "stats": [""],
+            "notableMissions": []
+        }
+    ],
+    "facilities": [
+        {
+            "name": "Space Launch Complex 40 (SLC-40)",
+            "location": "Cape Canaveral, Florida",
+            "description": "The site’s location on the southeast coast of the US provides access to a wide range of low and medium inclination orbits frequently used by communications and Earth-observing satellites and by supply missions to the International Space Station. The site also allows access to geostationary orbits, as well as departures to the Moon and interplanetary destinations.",
+            "images": [""]
+        },
+        {
+            "name": "Space Launch Complex 39A (SLC-39A)",
+            "location": "Cape Canaveral, Florida",
+            "description": "SpaceX is honored to launch from Kennedy Space Center’s historic Launch Complex 39A, home of the Apollo and Space Shuttle programs. In addition to commercial satellite launches and space station resupply missions, LC-39A supports crew launches of the Dragon spacecraft.",
+            "images": [""]
+        },
+        {
+            "name": "Vandenberg Air Force Base, Space Launch Complex 4 East",
+            "location": "Santa Barbara, California",
+            "description": "The site’s location on the California coastline provides customers with access to high inclination and polar orbits, frequently used by satellite communication constellations, defense intelligence and Earth-observing satellites, and some lunar missions. Launches from Vandenberg heading straight south traverse open ocean all the way to the Antarctic, by which time the vehicles have long since reached orbit.",
+            "images": [""]
+        },
+        {
+            "name": "South Texas Launch Site",
+            "location": "Boca Chica, Texas",
+            "description": "SpaceX is building the world’s first commercial launch site designed for orbital missions in the Cameron County area of South Texas. SpaceX’s build and launch site for its Starship test articles and spacecraft takes place here.",
+            "images": [""]
+        },
+        {
+            "name": "SpaceX Build Facility",
+            "location": "Hawthorne, California",
+            "description": "SpaceX designs and builds its reusable rockets and spacecraft at its headquarters in Hawthorne, California. As a company, SpaceX is vertically integrated, building the vast majority of the vehicle on the Hawthorne campus. SpaceX headquarters remains one of the few facilities in the world where you can see an entire launch vehicle or spacecraft come together under one roof.",
+            "images": [""]
+        },
+        {
+            "name": "SpaceX Testing Facility",
+            "location": "McGregor, Texas",
+            "description": "SpaceX tests its engines, vehicle structures, and systems at a 4,000-acre state-of-the-art rocket development facility in McGregor, Texas. Outfitted with 16 specialized test stands, the facility validates for flight every Merlin engine that powers the Falcon 9 and Falcon Heavy rockets, and every Draco thruster that controls the Dragon spacecraft.",
+            "images": [""]
+        }
+    ]
+}
