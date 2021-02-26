@@ -1,9 +1,8 @@
-var jsonData;
+var jsonData ={};
 var counter = 0;
 
 function start() {
     readTextFile();
-    setTimeout(fillAccordions(), 5000);
 }
 
 function readTextFile(file, callback) {
@@ -19,9 +18,10 @@ function readTextFile(file, callback) {
 }
 
 readTextFile("../../json/spacex.json", function(text) {
-    var data = JSON.parse(text);
-    jsonData = data;
+    jsonData = JSON.parse(text);
     console.log(jsonData);
+    console.log(jsonData.facilities[0].name);
+    fillAccordions();
 });
 
 function fillAccordions() {
@@ -41,16 +41,29 @@ function createFacilitiesAccordion(element) {
     parentElement.appendChild(accordionItem);
     accordionHeader = document.createElement("h2");
     accordionHeader.className = "accordion-header";
+    accordionHeader.id = "heading"+counter;
+    accordionHeader.innerHTML = element.location;
     button = document.createElement("button");
     button.className = "accordion-button";
-    // button.data.bs.toggle = "collapse";
-    // button.data.bs.target = "#collapse"+counter;
+    button.type = "button";
+    button.setAttribute("data-bs-toggle", "collapse");
+    button.setAttribute("data-bs-target", "collapse"+counter);
     accordionHeader.appendChild(button);
     header = document.createElement("p");
     header.className = "accordion-button-text";
     header.innerHTML = element.name;
     accordionHeader.appendChild(header);
+    collapse = document.createElement("div");
+    collapse.id = "collapse"+counter;
+    collapse.className = "accordion-collapse";
+    collapse.className += "collapse";
+    accordionItem.appendChild(collapse);
+    body = document.createElement("div");
+    body.className = "accordion-body";
+    collapse.appendChild(body);
+    body.innerHTML = element.description;
     counter++;
+    test = document.createElement("h1");
 }
 
 function fillVehiclesAccordion() {
